@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    
+    <head>
+        <title>Arcade Management App</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet"  href="https://fonts.googleapis.com/">
+
+                  
+         <style>
+             
+        :root{
+            --pink: #ef476f;
+            --yellow: #ffd166;
+            --green: #06d6a0;
+            --blue: #118ab2;
+            --dark-blue: #073b4c; 
+        }
+        
+        body {
+            background-color: var(--dark-blue);
+            color: #fff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        div {
+            display: flex;
+            justify-content: space-around;
+            padding: 0;
+        }
+
+        section {
+            text-align: center;
+            padding-bottom: 35px;
+            padding-top: 35px;
+            padding-left: 100px;
+            padding-right: 100px;
+            border-radius: 10px;
+            background-color: var(--dark-blue);
+            margin: 10px;
+            border: 5px solid var(--pink);
+        }
+        
+        #pageTitle{
+            font-weight: bold;
+            font-family: monospace;
+            letter-spacing: 10px;
+            font-size: 50px;
+            padding: 28px;
+            text-align: center;
+            color: var(--pink);
+        }
+        
+        #footer{
+            text-align: center;
+            font-weight: bold;
+            font-family: monospace;
+            font-size: 25px;
+            padding: 28px;
+            text-align: center;
+            color: var(--yellow);
+        }
+
+        h1 {
+            
+            font-family: monospace;
+            font-size: 45px;
+            color: var(--yellow);
+            border: 2px solid var(--yellow);
+            padding: 5px;
+        }
+
+        h5 {
+            font-family: monospace;
+            font-style: italic;
+            color: #fff;
+            font-size: 35px;
+            margin-bottom: 10px;
+        }
+
+        a {
+            text-decoration: none;
+            color: var(--green);
+        }
+
+        a:hover {
+            text-decoration: underline;
+            background: palevioletred;
+            padding: 5px;
+            border-radius: 10px;
+        }
+    </style>
+        
+    </head>
+    <body>
+        <div id="pageTitle">ARCADE MANAGEMENT</div>
+        <div>
+            <section id="core">
+            <h1>Core Records</h1>
+            <h5><a href="machines.html">Arcade Machines</a></h5><br>
+            <h5><a href="gameplay.html">Gameplay</a></h5><br>
+            <h5><a href="token.html">Token Conversion</a></h5><br>
+            </section>
+            
+            <section id="transactions">
+            <h1>Transactions</h1>
+            <h5><a href="expenses.html">Expenses</a></h5><br>
+            </section>
+            
+            <section id="report">
+            <h1>Reports</h1>
+            <h5><a href="display_gameOfMonth.jsp">Game of the Month</a></h5><br>
+            </section>
+            
+            
+            
+        </div>
+        
+        
+         <p id="footer">Submitted by: Renee Althea F. Khan    CCINFOM - S17</p>
+    </body>
+</html>

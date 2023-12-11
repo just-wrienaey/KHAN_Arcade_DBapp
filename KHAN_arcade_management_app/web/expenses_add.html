@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Add Expenses</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+            <style>
+            :root {
+                --pink: #ef476f;
+                --yellow: #ffd166;
+                --green: #06d6a0;
+                --blue: #118ab2;
+                --dark-blue: #073b4c; 
+            }
+
+            body {
+                text-align: center;
+                background-color: var(--dark-blue);
+                color: #fff;
+                font-family: Arial, sans-serif;
+            }
+
+
+            #pageTitle {
+                font-family: monospace;
+                letter-spacing: 10px;
+                font-size: 50px;
+                padding: 28px;
+                text-align: center;
+                color: var(--pink);
+            }
+
+            label {
+                font-family: monospace;
+                font-size: 40px;
+                color: var(--yellow);
+            }
+
+            section {
+                display: flex;
+                flex-direction: column;
+                padding: 25px;
+            }
+            
+            input, option, select{
+                font-size: 30px;
+            }
+            
+            form{
+                margin-left: 250px;
+                margin-right: 250px;
+            }
+            
+            button{
+                margin: 10px;
+                border-radius: 10px;
+                background-color: var(--pink);
+                color: white;
+                font-size: 30px;
+            }
+
+            
+        </style>
+    </head>
+    <body>
+        
+        <div id="pageTitle">ADD Expenses RECORD</div>
+        
+        <div id="form">
+            <form action="expenses_processing.jsp">
+                
+                <section>
+                    <label for="item_name">Item Name: </label>
+                    <input type="text" id="item_name" name="item_name">
+                </section>
+                
+                <br><br>
+                
+                <section>
+                    <label for="purpose">Purpose: </label>
+                    <input type="text" id="purpose" name="purpose">
+                </section>
+                
+                <br><br>
+                
+                <section>
+                    <label for="price">Price: </label>
+                    <input type="number" id="price" name="price" min="1" step="0.01" >
+                </section>
+                
+                <br><br>
+                
+                <section>
+                    <label for="date">Date: </label>
+                    <input type="date" id="date" name="date">
+                </section>
+                
+                <button type="submit">Submit</button>
+                
+            </form>
+        </div>
+    </body>
+</html>
